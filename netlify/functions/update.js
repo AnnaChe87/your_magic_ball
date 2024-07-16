@@ -1,4 +1,4 @@
-const sendMessage = require("../../src/sendMessage.js");
+const sendMessage = require("../../src/sendMessage");
 
 exports.handler = async (event) => {
 	const { message } = JSON.parse(event.body);
