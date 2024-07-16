@@ -1,8 +1,18 @@
 const sendMessage = require("../../src/sendMessage");
+const sendButtons = require("../../src/sendButtons");
 
 exports.handler = async (event) => {
-	console.log(JSON.parse(event.body));
 	const { message } = JSON.parse(event.body);
-	await sendMessage(message.chat.id, "I got your message!!");
+
+	console.log(message);
+	
+	switch (message.text) {
+	case "/start": 
+		await sendButtons(message.chat.id);
+		break;
+	default:
+		await sendMessage({ chat_id: message.chat.id, text: "I got your message!!" });
+	}
+	
 	return { statusCode: 200 }; 
 }
