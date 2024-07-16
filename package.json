@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AnnaChe87/your_magic_ball/issues"
   },
-  "homepage": "https://github.com/AnnaChe87/your_magic_ball#readme"
+  "homepage": "https://github.com/AnnaChe87/your_magic_ball#readme",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
 }
