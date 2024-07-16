@@ -5,7 +5,7 @@ module.exports = async (chat_id) => {
 		chat_id,
 		text: "Шар поможет тебе принять простое решение, просто доверься!",
 		reply_markup: {
-			keyboard: [[ { text: 'Шар реши за меня'} ]],
+			keyboard: [[ { text: 'Милый, реши за меня'} ]],
 			resize_keyboard: true
 		}
 	})

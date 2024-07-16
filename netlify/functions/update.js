@@ -9,7 +9,7 @@ exports.handler = async (event) => {
 	case "/start": 
 		await sendButtons(message.chat.id);
 		break;
-	case "Шар реши за меня":
+	case "Милый, реши за меня":
 		await sendPrediction(message.chat.id);
 		break;
 	default:
