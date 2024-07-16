@@ -3,7 +3,7 @@ const sendMessage = require("./sendMessage");
 module.exports = async (chat_id) => {
 	await sendMessage({
 		chat_id,
-		text: "Шар поможет тебе принять простое решение, просто доверься!",
+		text: "Привет, милая, я готов всё решить за тебя!",
 		reply_markup: {
 			keyboard: [[ { text: 'Милый, реши за меня'} ]],
 			resize_keyboard: true
